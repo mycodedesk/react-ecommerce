@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.road{
+  display:flex;
+  align-items: baseline;
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+@keyframes letsMoveIt {
+
+    from{
+        color: rgb(5, 5, 5);
+        font-size: 22px;
+        letter-spacing: 4px;
+    }
+    
+    to {
+        color:rgb(19, 13, 24);
+        font-size: 25px;
+        letter-spacing:4px;
+        font-style:var(font);
+        background-color: rgb(169, 176, 158);
+        font-family: "daru",serif;
+        border-radius: 10px;
+
+    }
+}
+
+
+.box{
+    width: 400px; 
+    height: 40px;
+    background-color: rgb(200, 223, 149);
+    
+    text-align:center;
+    font-family: "daru",serif;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    animation-name: letsMoveIt;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
